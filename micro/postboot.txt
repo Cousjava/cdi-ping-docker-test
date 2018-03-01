@@ -1,4 +1,2 @@
-set-requesttracing-configuration --enabled true --dynamic true --thresholdValue 50 --thresholdUnit MILLISECONDS 
+set-requesttracing-configuration --enabled true --dynamic true --thresholdValue 10 --thresholdUnit MILLISECONDS
 set-cloud-trace-configuration --cloudEndpointUrl http://ec2-35-177-131-141.eu-west-2.compute.amazonaws.com:8080/awsreciever-1.0-SNAPSHOT/trace --enabled true --frequencyUnit MINUTES
-set-log-levels org.glassfish.enterprise.concurrent=FINEST
-set-log-levels javax.enterprise.concurrent=FINEST
